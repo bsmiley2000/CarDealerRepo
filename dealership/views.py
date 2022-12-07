@@ -58,7 +58,7 @@ def updatePageView(request) :
         car.year = request.POST['year']
         car.color = request.POST['color']
         car.mileage = request.POST['mileage']
-        if request.POST['clean_title'] == "True":
+        if request.POST['clean_title'] == 'True':
             car.cleanTitle = True
         else:
             car.cleanTitle = False
